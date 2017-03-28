@@ -1,15 +1,15 @@
 {
     "name": "emacs",
-    "displayName": "Emacs",
-    "description": "Basic Emacs keybindings for VS Code",
-    "version": "0.0.9",
-    "publisher": "nisheetjain",
+    "displayName": "Emacx",
+    "description": "Emacx for vscode (http://github.com/fireho/emacx)",
+    "version": "0.0.1",
+    "publisher": "boxmo",
     "icon": "emacs.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/nisheetjain/vscode-emacs"
+        "url": "https://github.com/boxmo/vscode-emacs"
     },
-    "bugs": "https://github.com/nisheetjain/vscode-emacs/issues",
+    "bugs": "https://github.com/boxmo/vscode-emacs/issues",
     "license": "SEE LICENSE IN LICENSE.txt",
     "engines": {
         "vscode": "^0.10.1"
@@ -24,18 +24,13 @@
     "contributes": {
         "keybindings": [
             {
-                "key": "Ctrl+W",
-                "command": "editor.action.clipboardCutAction",
+                "key": "Alt+t",
+                "command": "workbench.action.quickOpen",
                 "when": "editorTextFocus"
             },
             {
                 "key": "Alt+W",
-                "command": "emacs.editor.action.clipboardCopyAction",
-                "when": "editorTextFocus"
-            },
-            {
-                "key": "Ctrl+Y",
-                "command": "editor.action.clipboardPasteAction",
+                "command": "workbench.action.openPreviousRecentlyUsedEditorInGroup",
                 "when": "editorTextFocus"
             },
             {
@@ -56,11 +51,6 @@
             {
                 "key": "Ctrl+O",
                 "command": "editor.action.insertLineAfter",
-                "when": "editorTextFocus"
-            },
-            {
-                "key": "Ctrl+X U",
-                "command": "undo",
                 "when": "editorTextFocus"
             },
             {
@@ -114,12 +104,12 @@
                 "when": "editorTextFocus"
             },
             {
-                "key": "Alt+B",
+                "key": "Ctrl+left",
                 "command": "emacs.cursorWordLeft",
                 "when": "editorTextFocus"
             },
             {
-                "key": "Alt+F",
+                "key": "Ctrl+right",
                 "command": "emacs.cursorWordRight",
                 "when": "editorTextFocus"
             },
@@ -134,39 +124,15 @@
                 "when": "editorTextFocus"
             },
             {
-                "key": "Ctrl+N",
-                "command": "emacs.scrollLineDown",
-                "when": "editorTextFocus"
-            },
-            {
-                "key": "Ctrl+P",
-                "command": "emacs.scrollLineUp",
-                "when": "editorTextFocus"
-            },
-            {
-                "key": "Alt+Shift+,",
-                "command": "emacs.cursorTop",
-                "when": "editorTextFocus"
-            },
-            {
-                "key": "Alt+Shift+.",
-                "command": "emacs.cursorBottom",
-                "when": "editorTextFocus"
-            },
-            {
-                "key": "Alt+G G",
+                "key": "Alt+G",
                 "command": "workbench.action.gotoLine"
-            },
-            {
-                "key": "Ctrl+S",
-                "command": "emacs.editor.action.nextMatchFindAction"
             },
             {
                 "key": "Ctrl+R",
                 "command": "emacs.editor.action.previousMatchFindAction"
             },
             {
-                "key": "Ctrl+X K",
+                "key": "Ctrl+X 0",
                 "command": "workbench.action.closeActiveEditor",
                 "when": "editorTextFocus"
             },
@@ -175,7 +141,7 @@
                 "command": "workbench.action.openPreviousEditor"
             },
             {
-                "key": "Ctrl+X Ctrl+S",
+                "key": "Alt+S",
                 "command": "workbench.action.files.save"
             },
             {
@@ -183,37 +149,20 @@
                 "command": "workbench.action.files.saveAll"
             },
             {
-                "key": "Ctrl+X Ctrl+C",
-                "command": "workbench.action.closeWindow"
-            },
-            {
                 "key": "Ctrl+X 3",
                 "command": "workbench.action.splitEditor"
-            },
-            {
-                "key": "Ctrl+X O",
-                "command": "workbench.action.cycleEditor"
-            },
-            {
-                "key": "Ctrl+X Ctrl+F",
-                "command": "workbench.action.files.openFileFolder"
             },
             {
                 "key": "Ctrl+D",
                 "command": "deleteRight"
             },
             {
-                "key": "Ctrl+Alt+\\",
-                "command": "editor.action.format",
-                "when": "editorTextFocus"
-            },
-            {
-                "key": "Ctrl+C Ctrl+C",
+                "key": "Alt+;",
                 "command": "editor.action.addCommentLine",
                 "when": "editorTextFocus"
             },
             {
-                "key": "Ctrl+C Ctrl+U",
+                "key": "Alt+;",
                 "command": "editor.action.removeCommentLine",
                 "when": "editorTextFocus"
             },
