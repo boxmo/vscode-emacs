@@ -1,8 +1,8 @@
 {
-    "name": "emacs",
+    "name": "emacx",
     "displayName": "Emacx",
     "description": "Emacx for vscode (http://github.com/fireho/emacx)",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "boxmo",
     "icon": "emacs.png",
     "repository": {
@@ -162,7 +162,7 @@
                 "when": "editorTextFocus"
             },
             {
-                "key": "Alt+;",
+                "key": "Alt+'",
                 "command": "editor.action.removeCommentLine",
                 "when": "editorTextFocus"
             },
