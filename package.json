@@ -169,7 +169,12 @@
             {
                 "key": "Alt+X",
                 "command": "workbench.action.showCommands"
+            },
+					  {
+                "key": "Alt+a",
+                "command": "workbench.view.git",
             }
+
         ]
     },
 	"scripts": {
