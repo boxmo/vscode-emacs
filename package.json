@@ -172,7 +172,7 @@
             },
 					  {
                 "key": "Alt+a",
-                "command": "workbench.view.git",
+                "command": "workbench.view.git"
             }
 
         ]
